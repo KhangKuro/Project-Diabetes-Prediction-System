@@ -1,25 +1,22 @@
-
-
 <img src="https://github.com/KhangKuro/Project-Diabetes-Prediction-System/blob/main/picture.png" />
 
+# Diabetes Prediction System - Predicting Diabetes
 
-# Diabetes Prediction System - Dự Đoán Bệnh Tiểu Đường
+## Purpose
 
-## Mục Đích
+This project aims to build a diabetes prediction system based on diagnostic parameters and a dataset collected from Kaggle. Using data analysis and modeling techniques, we have performed a series of steps to process the data and construct a prediction model.
 
-Dự án này nhằm xây dựng một hệ thống dự đoán bệnh tiểu đường dựa trên các thông số chẩn đoán và bộ dữ liệu thu thập từ Kaggle. Bằng việc sử dụng các kỹ thuật phân tích dữ liệu và mô hình hóa, chúng tôi đã thực hiện một loạt các bước để xử lý dữ liệu và xây dựng mô hình dự đoán.
+## Content
 
-## Nội Dung
+### 1. Load the Dataset
 
-### 1. Load the Dataset - Đọc Bộ Dữ Liệu
+Dataset source: [Kaggle](https://www.kaggle.com/datasets/mathchi/diabetes-data-set)
 
-Nguồn bộ dữ liệu: [Kaggle](https://www.kaggle.com/datasets/mathchi/diabetes-data-set)
+### 2. Exploratory Data Analysis
 
-### 2. Exploratory Data Analysis - Phân Tích Tổng Quát Dữ Liệu
+This dataset is obtained from the National Institute of Diabetes and Digestive and Kidney Diseases. The goal is to predict based on diagnostic measures whether a patient has diabetes or not. All patients are females aged 21 and above in India.
 
-Bộ dữ liệu này được lấy từ Viện Quốc Gia về Bệnh Tiểu Đường và các bệnh về tiêu hóa và thận. Mục tiêu là dự đoán dựa trên các phép đo chẩn đoán xem một bệnh nhân có bị tiểu đường hay không. Tất cả bệnh nhân đều là nữ từ 21 tuổi trở lên ở Ấn Độ.
-
-Có tổng cộng 9 cột tương ứng với 9 thông tin (biến) như sau:
+There are a total of 9 columns corresponding to 9 variables as follows:
 
 - Pregnancies
 - Glucose
@@ -31,49 +28,49 @@ Có tổng cộng 9 cột tương ứng với 9 thông tin (biến) như sau:
 - Age
 - Outcome
 
-Bộ dữ liệu không có giá trị bị thiếu. Tuy nhiên, cần tiền xử lý dữ liệu để thay thế các giá trị bằng 0.
+The dataset has no missing values. However, data preprocessing is required to replace values with 0.
 
-### 3. Data Visualization - Trực Quan Hóa Dữ Liệu
+### 3. Data Visualization
 
-#### 3.1 Đồ thị Boxplot
+#### 3.1 Boxplot
 
-Biểu đồ boxplot thể hiện vị trí phân bố của dữ liệu từng biến trong bộ dữ liệu.
+The boxplot illustrates the distributional position of each variable in the dataset.
 
-#### 3.2 Biểu Đồ Cột và Đường Cong Ước Lượng
+#### 3.2 Column and Estimated Curve Charts
 
-Đường cong ước lượng của mỗi biến thể hiện phân phối của biến đó.
+The estimated curve of each variable represents its distribution.
 
-### 4. Data Pre-processing - Tiền Xử Lý Dữ Liệu
+### 4. Data Pre-processing
 
-#### 4.1 Xử Lý Giá Trị Thiếu
+#### 4.1 Handling Missing Values
 
-Cần thay thế các giá trị bằng 0 trong bộ dữ liệu.
+Replacement of values with 0 in the dataset is necessary.
 
-#### 4.2 Xử Lý Mất Cân Bằng Dữ Liệu
+#### 4.2 Addressing Data Imbalance
 
-Cần xử lý mất cân bằng dữ liệu trong quá trình xây dựng mô hình Machine Learning.
+Addressing data imbalance during the Machine Learning model building process.
 
-### 5. Model Building - Xây Dựng Mô Hình
+### 5. Model Building
 
-#### 5.1 Chia Dữ Liệu và So Sánh Mô Hình
+#### 5.1 Data Splitting and Model Comparison
 
-Sử dụng các thuật toán khác nhau và so sánh hiệu suất của chúng.
+Utilizing different algorithms and comparing their performance.
 
-#### 5.2 Chọn Mô Hình
+#### 5.2 Model Selection
 
-Sử dụng Decision Tree với hiệu suất cao nhất.
+Using Decision Tree with the highest performance.
 
-### 6. Review - Đánh Giá Mô Hình
+### 6. Review
 
 #### 6.1 Classification Report
 
-Đánh giá kết quả mô hình dự đoán.
+Evaluation of the prediction model's results.
 
 #### 6.2 Confusion Matrix
 
-Hiển thị kết quả dự đoán của mô hình trên ma trận nhầm lẫn.
+Displaying the model's prediction results on the confusion matrix.
 
 ---
 
-Cảm ơn bạn đã đọc. Đừng ngần ngại đóng góp ý kiến hoặc thêm thông tin vào dự án!
+Thank you for reading. Feel free to contribute opinions or add information to the project!
 Special thanks to LinhChiHo for their invaluable guidance and insights throughout the development of this project!
